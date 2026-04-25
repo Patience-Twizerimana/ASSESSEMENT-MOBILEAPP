@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mobile Money Security Awareness</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <style>
+    body {
+      font-family: Arial;
+      background: #f4f4f4;
+      padding: 15px;
+    }
+
+    .container {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      max-width: 500px;
+      margin: auto;
+      box-shadow: 0px 0px 10px gray;
+    }
+
+    h2 {
+      text-align: center;
+      color: green;
+    }
+
+    button {
+      background: green;
+      color: white;
+      padding: 10px;
+      border: none;
+      width: 100%;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+
+    button:hover {
+      background: darkgreen;
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>Mobile Money Awareness Test</h2>
+
+<form id="quizForm">
+
+<p><b>1. MTN ALERT:</b> You received UGX 500,000. Enter PIN to claim.</p>
+<input type="radio" name="q1" value="0"> Enter PIN<br>
+<input type="radio" name="q1" value="1"> Ignore message<br>
+<input type="radio" name="q1" value="1"> Verify with telecom<br>
+
+<br>
+
+<p><b>2. Call from “Customer Care” asking for your PIN.</b></p>
+<input type="radio" name="q2" value="0"> Share PIN<br>
+<input type="radio" name="q2" value="1"> Hang up<br>
+<input type="radio" name="q2" value="1"> Report number<br>
+
+<br>
+
+<p><b>3. You receive money by mistake, sender asks for refund immediately.</b></p>
+<input type="radio" name="q3" value="0"> Send back immediately<br>
+<input type="radio" name="q3" value="1"> Contact customer care<br>
+<input type="radio" name="q3" value="1"> Wait and verify<br>
+
+<br>
+
+<p><b>4. You receive a link via SMS to claim a reward.</b></p>
+<input type="radio" name="q4" value="0"> Click link<br>
+<input type="radio" name="q4" value="1"> Ignore<br>
+<input type="radio" name="q4" value="1"> Verify source<br>
+
+<br><br>
+
+<button type="button" onclick="calculateScore()">Submit</button>
+
+</form>
+
+<br>
+
+<h3 id="result"></h3>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
